@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+#main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: red; */
+}
+
+#back{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+#front{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+#contents{
+    margin: 0 auto;
+    /* background-color: red; */
+    width: 80%;
+    height: 100%;
+    position: relative;
+}
+
+#nav{
+    /* background-color: red; */
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nleft, #nright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+#nleft img{
+    width: 80px;
+}
+
+#nav a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+#hero{
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    transform: translate(0%,-50%);
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+#heroleft{
+    width: 100%;
+    max-width: 50%;
+    /* height: 20px;
+    background-color: yellow; */
+}
+
+#heroright{
+    width: 25%;
+    /* height: 20px;
+    background-color: gray; */
+}
+
+#heroleft #elem{
+    height: 8vw;
+    overflow: hidden;
+    /* background-color: rebeccapurple; */
+}
+
+#heroleft #elem h1{
+    color: #fff;
+    font-family: "kajiro";
+    font-weight: 100;
+    font-size: 10vw;
+    line-height: .9;
+}
+
+#heroleft button {
+    padding: .8vw 3vw;
+    font-size: 3vw;
+    margin-top: 2vw;
+    font-family: "kajiro";
+}
