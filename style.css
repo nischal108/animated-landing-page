@@ -22,10 +22,16 @@ html,body{
 #back{
     width: 100%;
     height: 100%;
-    background-color: black;
+    /* background-color: black; */
 }
-
+#back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
 #front{
+    pointer-events: none;
     position: absolute;
     top: 0;
     width: 100%;
@@ -56,7 +62,7 @@ html,body{
     gap: 40px;
 }
 #nleft img{
-    width: 80px;
+    width: 90px;
 }
 
 #nav a{
@@ -64,6 +70,7 @@ html,body{
     color: #fff;
     font-size: 15px;
     text-transform: uppercase;
+    pointer-events: all;
 }
 
 #hero{
@@ -84,24 +91,27 @@ html,body{
     background-color: yellow; */
 }
 
-#heroright{
-    width: 25%;
-    /* height: 20px;
-    background-color: gray; */
-}
 
-#heroleft #elem{
+ .elem{
+    position: relative;
     height: 8vw;
     overflow: hidden;
     /* background-color: rebeccapurple; */
 }
 
-#heroleft #elem h1{
+#heroleft .elem h1:nth-child(1){
+    top: 0;
+}
+
+#heroleft .elem h1{
+    position: absolute;
+    top:100%;
     color: #fff;
     font-family: "kajiro";
     font-weight: 100;
     font-size: 10vw;
     line-height: .9;
+    overflow: hidden;
 }
 
 #heroleft button {
@@ -109,4 +119,40 @@ html,body{
     font-size: 3vw;
     margin-top: 2vw;
     font-family: "kajiro";
+    cursor: pointer;
+    pointer-events: all;
+}
+
+#heroright{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    color: #fff;
+}
+
+#heroright p{
+    font-size: 0.65rem;
+    text-align: right;
+}
+
+#heroright p:nth-child(1){
+    /* color: red; */
+    margin-top: 3vw;
+    margin-bottom: 1vw;
+}
+
+#heroright #imgdiv{
+    height: 140px;
+    width: 100%;
+    background-image: url(/assests/bw.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1vw;
+}
+
+#heroright p:nth-child(3){
+    /* color: red; */
+    margin-bottom: 4.5vw;
 }
