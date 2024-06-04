@@ -146,7 +146,7 @@ html,body{
 #heroright #imgdiv{
     height: 140px;
     width: 100%;
-    background-image: url(/assests/bw.jpg);
+    background-image: url(assests/bw.jpg);
     background-size: cover;
     background-position: center;
     margin-bottom: 1vw;
